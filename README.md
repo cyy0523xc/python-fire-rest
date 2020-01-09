@@ -288,6 +288,8 @@ curl -XPOST localhost:5000/hello -d '{"name": "exception"}'
 需要上传文件时，可以如下使用
 
 ```python
+from PIL import Image
+from werkzeug import secure_filename
 from flask import request
 
 def upload():
